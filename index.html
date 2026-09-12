@@ -12,6 +12,7 @@
         content="WHELHAUS is an independent digital studio specialising in web design, SEO and digital strategy."
     >
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -20,40 +21,66 @@
         rel="stylesheet"
     >
 
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
 
-    <!-- HEADER -->
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
     <header class="site-header">
 
-        <a href="index.html" class="brand">
+        <a href="index.html" class="brand" aria-label="WHELHAUS home">
             <span class="brand-name">WHELHAUS</span>
             <span class="brand-subtitle">Digital Studio</span>
         </a>
 
-        <button class="menu-toggle" aria-label="Open navigation">
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
             Menu
         </button>
 
-        <nav class="main-nav">
+
+        <nav class="main-nav" aria-label="Main navigation">
+
             <a href="#work">Work</a>
+
             <a href="#services">Services</a>
+
             <a href="#studio">Studio</a>
+
             <a href="#contact">Contact</a>
 
             <a href="#contact" class="nav-button">
                 Start a project →
             </a>
+
         </nav>
 
     </header>
 
 
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
+
     <main>
 
-        <!-- HERO -->
+
+        <!-- ====================================
+             HERO
+        ===================================== -->
+
         <section class="hero">
 
             <div class="hero-content">
@@ -62,10 +89,12 @@
                     Strategy. Design. Results.
                 </p>
 
+
                 <h1>
                     Websites built<br>
                     to do <em>business.</em>
                 </h1>
+
 
                 <p class="hero-intro">
                     Independent digital studio creating websites,
@@ -73,15 +102,20 @@
                     around real business goals.
                 </p>
 
+
                 <a href="#contact" class="primary-button">
                     Start a project →
                 </a>
 
+
                 <div class="built-in">
+
                     <span></span>
+
                     <p>
                         Built in <strong>WHELHAUS.</strong>
                     </p>
+
                 </div>
 
             </div>
@@ -90,6 +124,7 @@
             <div class="hero-image">
 
                 <div class="hero-overlay-text">
+
                     <span></span>
 
                     <p>
@@ -99,12 +134,18 @@
                         BETTER<br>
                         BUSINESSES.
                     </p>
+
                 </div>
 
+
                 <div class="hero-number">
+
                     <span>01</span>
+
                     <span class="number-line"></span>
+
                     <span>05</span>
+
                 </div>
 
             </div>
@@ -112,22 +153,37 @@
         </section>
 
 
-        <!-- SERVICES -->
+
+        <!-- ====================================
+             SERVICES
+        ===================================== -->
+
         <section class="services" id="services">
+
+
+            <!-- WEB DESIGN -->
 
             <article class="service-card">
 
                 <div class="service-number">
+
                     <span>01</span>
+
                     <span class="small-line"></span>
+
                 </div>
 
-                <h2>Web Design</h2>
+
+                <h2>
+                    Web Design
+                </h2>
+
 
                 <p>
                     Beautiful, high-performing websites designed
-                    to convert.
+                    around your business and built to convert.
                 </p>
+
 
                 <a href="#">
                     Learn more →
@@ -136,19 +192,30 @@
             </article>
 
 
+
+            <!-- SEO -->
+
             <article class="service-card">
 
                 <div class="service-number">
+
                     <span>02</span>
+
                     <span class="small-line"></span>
+
                 </div>
 
-                <h2>SEO</h2>
+
+                <h2>
+                    SEO
+                </h2>
+
 
                 <p>
-                    Stronger search visibility. More of the right
-                    customers.
+                    Stronger search visibility that helps the right
+                    customers find your business.
                 </p>
+
 
                 <a href="#">
                     Learn more →
@@ -157,19 +224,30 @@
             </article>
 
 
+
+            <!-- DIGITAL STRATEGY -->
+
             <article class="service-card">
 
                 <div class="service-number">
+
                     <span>03</span>
+
                     <span class="small-line"></span>
+
                 </div>
 
-                <h2>Digital Strategy</h2>
+
+                <h2>
+                    Digital Strategy
+                </h2>
+
 
                 <p>
-                    Practical, commercial digital strategies
-                    for real growth.
+                    Practical digital strategies built around
+                    commercial goals, not digital noise.
                 </p>
+
 
                 <a href="#">
                     Learn more →
@@ -180,30 +258,57 @@
         </section>
 
 
-        <!-- WORK -->
+
+        <!-- ====================================
+             SELECTED WORK
+        ===================================== -->
+
         <section class="work-section" id="work">
+
+
+            <!-- PROJECT VISUAL -->
 
             <div class="work-image">
 
-                <div class="mockup-content">
+                <div class="website-mockup">
 
-    <p class="mockup-logo">
-        JACK DUNNE
-    </p>
 
-    <h3>
-        Style that feels<br>
-        effortless.
-    </h3>
+                    <!-- Browser Bar -->
 
-    <p>
-        Contemporary menswear. Personal service. Everyday confidence.
-    </p>
+                    <div class="mockup-header">
 
-    <button>
-        Shop the Collection
-    </button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
 
+                    </div>
+
+
+                    <!-- Jack Dunne Website Mockup -->
+
+                    <div class="mockup-content">
+
+                        <p class="mockup-logo">
+                            JACK DUNNE
+                        </p>
+
+
+                        <h3>
+                            Style that feels<br>
+                            effortless.
+                        </h3>
+
+
+                        <p>
+                            Contemporary menswear.
+                            Personal service.
+                            Everyday confidence.
+                        </p>
+
+
+                        <button type="button">
+                            Discover Jack Dunne
+                        </button>
 
                     </div>
 
@@ -212,63 +317,83 @@
             </div>
 
 
-<div class="work-content">
 
-    <p class="section-label">
-        Selected Work — 001
-    </p>
+            <!-- PROJECT INFORMATION -->
 
-    <h2>
-        JACK DUNNE
-    </h2>
+            <div class="work-content">
 
-    <p class="work-meta">
-        Web Design · Development · SEO
-    </p>
+                <p class="section-label">
+                    Selected Work — 001
+                </p>
 
-    <p>
-        A modern retail website for an established menswear business,
-        designed to reflect the quality of the brand, improve online
-        visibility and create a stronger digital presence.
-    </p>
 
-    <a href="#">
-        View case study →
-    </a>
+                <h2>
+                    JACK DUNNE
+                </h2>
 
-    <div class="next-project">
 
-        <span class="project-line"></span>
+                <p class="work-meta">
+                    Web Design · SEO · Digital Strategy
+                </p>
 
-        <p class="section-label">
-            002
-        </p>
 
-        <h3>
-            Currently in the studio.
-        </h3>
+                <p>
+                    A sharper digital presence for a trusted
+                    menswear retailer. Designed to reflect the
+                    quality and personality of the business,
+                    strengthen its online presence and make it
+                    easier for customers to discover the brand.
+                </p>
 
-        <p>
-            More projects coming soon.
-        </p>
 
-    </div>
+                <a href="#">
+                    View case study →
+                </a>
 
-</div>
+
+
+                <!-- NEXT PROJECT -->
+
+                <div class="next-project">
+
+                    <span class="project-line"></span>
+
+
+                    <p class="section-label">
+                        002
+                    </p>
+
+
+                    <h3>
+                        Currently in the studio.
+                    </h3>
+
+
+                    <p>
+                        More projects coming soon.
+                    </p>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- APPROACH -->
+
+        <!-- ====================================
+             WHELHAUS APPROACH
+        ===================================== -->
+
         <section class="approach" id="studio">
+
 
             <div>
 
                 <p class="section-label light">
                     The WHELHAUS Approach
                 </p>
+
 
                 <h2>
                     Strategy first.<br>
@@ -279,13 +404,16 @@
             </div>
 
 
+
             <div class="approach-copy">
 
                 <p>
                     We combine commercial thinking with creative
-                    design and technical expertise to help ambitious
-                    businesses grow online.
+                    design and technical expertise to create digital
+                    experiences that work as hard as the businesses
+                    behind them.
                 </p>
+
 
                 <a href="#">
                     About the studio →
@@ -296,21 +424,29 @@
         </section>
 
 
-        <!-- CONTACT -->
+
+        <!-- ====================================
+             CONTACT
+        ===================================== -->
+
         <section class="contact" id="contact">
+
 
             <p class="section-label">
                 Start a project
             </p>
 
+
             <h2>
                 Have a project in mind?
             </h2>
+
 
             <p>
                 Tell us what you're building, what isn't working,
                 or where you want your business to go next.
             </p>
+
 
             <a
                 href="mailto:alanwhelan1978@gmail.com"
@@ -324,30 +460,72 @@
     </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
     <footer class="site-footer">
 
+
         <div class="brand">
-            <span class="brand-name">WHELHAUS</span>
-            <span class="brand-subtitle">Digital Studio</span>
+
+            <span class="brand-name">
+                WHELHAUS
+            </span>
+
+            <span class="brand-subtitle">
+                Digital Studio
+            </span>
+
         </div>
 
-        <nav class="footer-nav">
-            <a href="#work">Work</a>
-            <a href="#services">Services</a>
-            <a href="#studio">Studio</a>
-            <a href="#contact">Contact</a>
+
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+
+            <a href="#work">
+                Work
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#studio">
+                Studio
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
         </nav>
 
+
+
         <div class="footer-legal">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
+
+            <a href="privacy.html">
+                Privacy
+            </a>
+
+            <a href="terms.html">
+                Terms
+            </a>
+
         </div>
 
     </footer>
 
 
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
