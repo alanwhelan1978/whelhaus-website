@@ -105,7 +105,7 @@ textarea {
 }
 
 
-/* fallback text logo if ever needed */
+/* fallback text logo */
 
 .brand-name {
     font-size: 1.6rem;
@@ -771,6 +771,270 @@ textarea {
     line-height: 1.7;
 }
 
+.services-hero-price {
+    margin-top: 20px;
+
+    color: var(--copper);
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.services-hero-price strong {
+    color: var(--black);
+
+    font-size: 1.08rem;
+}
+
+
+/* ==========================================================
+   PRICING
+========================================================== */
+
+.pricing-section {
+    padding: 110px 7%;
+
+    background: var(--cream);
+
+    border-bottom: 1px solid var(--line);
+}
+
+.pricing-intro {
+    max-width: 900px;
+
+    margin-bottom: 70px;
+}
+
+.pricing-intro h2 {
+    font-family: var(--serif);
+
+    font-size: clamp(3rem, 5vw, 5.2rem);
+    font-weight: 500;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.03em;
+}
+
+.pricing-intro > p:not(.eyebrow) {
+    max-width: 620px;
+
+    margin-top: 24px;
+
+    color: var(--grey);
+
+    font-size: 1.05rem;
+
+    line-height: 1.75;
+}
+
+.pricing-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.pricing-card {
+    position: relative;
+
+    min-height: 600px;
+
+    padding: 42px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--cream-light);
+
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.pricing-card-featured {
+    background: #eee8de;
+}
+
+.pricing-label {
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    color: var(--copper);
+
+    font-size: 0.68rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.14em;
+}
+
+.pricing-number {
+    color: var(--copper);
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.15em;
+}
+
+.pricing-card h3 {
+    margin-top: 28px;
+
+    font-family: var(--serif);
+
+    font-size: 2.2rem;
+    font-weight: 500;
+
+    line-height: 1.05;
+}
+
+.pricing-price {
+    margin-top: 22px;
+
+    color: #4f4a43;
+
+    font-size: 1rem;
+}
+
+.pricing-price strong {
+    display: inline-block;
+
+    margin-left: 5px;
+
+    color: var(--black);
+
+    font-family: var(--serif);
+
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.pricing-summary {
+    margin-top: 20px;
+
+    color: #514d46;
+
+    line-height: 1.7;
+}
+
+.pricing-card ul {
+    margin-top: 28px;
+
+    list-style: none;
+}
+
+.pricing-card li {
+    padding: 11px 0;
+
+    color: #514d46;
+
+    border-bottom: 1px solid rgba(23, 22, 20, 0.10);
+}
+
+.pricing-card li::before {
+    content: "—";
+
+    margin-right: 12px;
+
+    color: var(--copper);
+}
+
+.pricing-link {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: auto;
+    padding-top: 28px;
+
+    text-decoration: underline;
+
+    text-underline-offset: 5px;
+}
+
+.pricing-services {
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.pricing-services article {
+    padding: 42px;
+
+    background: var(--cream-light);
+
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.pricing-services h3 {
+    margin-bottom: 12px;
+
+    font-family: var(--serif);
+
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.pricing-small-price {
+    margin-bottom: 18px;
+
+    color: var(--copper);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.pricing-services article > p:last-child {
+    max-width: 540px;
+
+    color: #514d46;
+
+    line-height: 1.7;
+}
+
+.pricing-note {
+    margin-top: 40px;
+
+    padding-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    border-top: 1px solid var(--line);
+}
+
+.pricing-note p {
+    max-width: 620px;
+
+    color: var(--grey);
+
+    font-size: 0.92rem;
+
+    line-height: 1.7;
+}
+
+.pricing-note strong {
+    color: var(--black);
+}
+
+
+/* ==========================================================
+   SERVICE DETAIL
+========================================================== */
+
 .service-detail {
     display: grid;
     grid-template-columns: 100px 1fr 1fr;
@@ -850,6 +1114,11 @@ textarea {
 
     color: var(--copper);
 }
+
+
+/* ----------------------------------------------------------
+   PROCESS
+---------------------------------------------------------- */
 
 .process-section {
     padding: 100px 7%;
@@ -1984,23 +2253,18 @@ p:not(.section-label):not(.work-meta) {
 ========================================================== */
 
 .site-footer {
-    padding: 50px 5%;
+    padding: 48px 5%;
 
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: minmax(220px, 1fr) auto auto;
 
     align-items: center;
-    gap: 60px;
+    gap: 50px;
 
     background: var(--cream);
 
     border-top: 1px solid var(--line);
 }
-
-
-/* ----------------------------------------------------------
-   FOOTER BRAND
----------------------------------------------------------- */
 
 .footer-brand {
     display: flex;
@@ -2010,35 +2274,32 @@ p:not(.section-label):not(.work-meta) {
 
 .footer-logo-link {
     display: inline-block;
+    width: 180px;
 }
 
 .footer-logo {
     display: block;
 
-    width: 175px;
-    height: auto;
+    width: 180px !important;
+    max-width: 180px !important;
+    height: auto !important;
 }
 
 .footer-tagline {
-    margin-top: 12px;
+    margin-top: 10px;
 
     color: var(--grey);
 
     font-size: 0.72rem;
 
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
 }
-
-
-/* ----------------------------------------------------------
-   FOOTER NAVIGATION
----------------------------------------------------------- */
 
 .footer-nav {
     display: flex;
     align-items: center;
 
-    gap: 28px;
+    gap: 26px;
 
     font-size: 0.82rem;
 }
@@ -2051,20 +2312,15 @@ p:not(.section-label):not(.work-meta) {
     opacity: 0.5;
 }
 
-
-/* ----------------------------------------------------------
-   FOOTER LEGAL
----------------------------------------------------------- */
-
 .footer-legal {
     display: flex;
     align-items: center;
 
-    gap: 22px;
-
-    font-size: 0.72rem;
+    gap: 20px;
 
     color: var(--grey);
+
+    font-size: 0.72rem;
 }
 
 .footer-legal a {
@@ -2213,6 +2469,27 @@ p:not(.section-label):not(.work-meta) {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card {
+        min-height: auto;
+    }
+
+    .pricing-link {
+        margin-top: 30px;
+    }
+
+    .pricing-services {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-note {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     .project-breakdown,
     .case-columns,
     .contact-options {
@@ -2237,11 +2514,7 @@ p:not(.section-label):not(.work-meta) {
 
     .site-footer {
         grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .footer-brand {
-        margin-bottom: 5px;
+        gap: 26px;
     }
 
 }
@@ -2358,6 +2631,31 @@ p:not(.section-label):not(.work-meta) {
         padding: 65px 7% 75px;
     }
 
+    .pricing-section {
+        padding: 75px 7%;
+    }
+
+    .pricing-intro {
+        margin-bottom: 50px;
+    }
+
+    .pricing-intro h2 {
+        font-size: 3rem;
+    }
+
+    .pricing-card,
+    .pricing-services article {
+        padding: 32px 26px;
+    }
+
+    .pricing-card h3 {
+        font-size: 2rem;
+    }
+
+    .pricing-price strong {
+        font-size: 2rem;
+    }
+
     .service-detail,
     .case-overview,
     .studio-belief,
@@ -2408,108 +2706,6 @@ p:not(.section-label):not(.work-meta) {
     }
 
     .site-footer {
-        padding: 42px 7%;
-    }
-
-    .footer-logo {
-        width: 155px;
-    }
-
-    .footer-nav {
-        flex-wrap: wrap;
-        gap: 16px 24px;
-    }
-
-    .footer-legal {
-        flex-wrap: wrap;
-        gap: 12px 20px;
-    }
-
-    .footer-tagline {
-        font-size: 0.68rem;
-    }
-
-}
-
-/* ==========================================================
-   FOOTER FINAL OVERRIDES
-========================================================== */
-
-.site-footer {
-    padding: 48px 5%;
-
-    display: grid;
-    grid-template-columns: minmax(220px, 1fr) auto auto;
-
-    align-items: center;
-    gap: 50px;
-
-    background: var(--cream);
-
-    border-top: 1px solid var(--line);
-}
-
-.footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.footer-logo-link {
-    display: inline-block;
-    width: 180px;
-}
-
-.footer-logo {
-    display: block;
-
-    width: 180px !important;
-    max-width: 180px !important;
-    height: auto !important;
-}
-
-.footer-tagline {
-    margin-top: 10px;
-
-    color: var(--grey);
-
-    font-size: 0.72rem;
-
-    letter-spacing: 0.04em;
-}
-
-.footer-nav {
-    display: flex;
-    align-items: center;
-
-    gap: 26px;
-
-    font-size: 0.82rem;
-}
-
-.footer-legal {
-    display: flex;
-    align-items: center;
-
-    gap: 20px;
-
-    color: var(--grey);
-
-    font-size: 0.72rem;
-}
-
-@media (max-width: 950px) {
-
-    .site-footer {
-        grid-template-columns: 1fr;
-        gap: 26px;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .site-footer {
         padding: 40px 7%;
     }
 
@@ -2527,329 +2723,8 @@ p:not(.section-label):not(.work-meta) {
         flex-wrap: wrap;
     }
 
-}
-
-/* ==========================================================
-   PRICING SECTION
-========================================================== */
-
-.pricing-section {
-    padding: 110px 7%;
-
-    background: var(--cream);
-
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-}
-
-
-/* ----------------------------------------------------------
-   PRICING INTRO
----------------------------------------------------------- */
-
-.pricing-intro {
-    max-width: 900px;
-
-    margin-bottom: 70px;
-}
-
-.pricing-intro h2 {
-    font-family: var(--serif);
-
-    font-size: clamp(3rem, 5vw, 5.2rem);
-    font-weight: 500;
-
-    line-height: 1.05;
-
-    letter-spacing: -0.03em;
-}
-
-.pricing-intro > p:not(.eyebrow) {
-    max-width: 620px;
-
-    margin-top: 24px;
-
-    color: var(--grey);
-
-    font-size: 1.05rem;
-
-    line-height: 1.75;
-}
-
-
-/* ----------------------------------------------------------
-   MAIN PRICING GRID
----------------------------------------------------------- */
-
-.pricing-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    border-top: 1px solid var(--line);
-    border-left: 1px solid var(--line);
-}
-
-.pricing-card {
-    position: relative;
-
-    min-height: 600px;
-
-    padding: 42px;
-
-    display: flex;
-    flex-direction: column;
-
-    background: var(--cream-light);
-
-    border-right: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-}
-
-.pricing-card-featured {
-    background: #eee8de;
-}
-
-.pricing-label {
-    position: absolute;
-
-    top: 18px;
-    right: 20px;
-
-    color: var(--copper);
-
-    font-size: 0.68rem;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.14em;
-}
-
-.pricing-number {
-    color: var(--copper);
-
-    font-size: 0.75rem;
-
-    letter-spacing: 0.15em;
-}
-
-.pricing-card h3 {
-    margin-top: 28px;
-
-    font-family: var(--serif);
-
-    font-size: 2.2rem;
-    font-weight: 500;
-
-    line-height: 1.05;
-}
-
-.pricing-price {
-    margin-top: 22px;
-
-    color: #4f4a43;
-
-    font-size: 1rem;
-}
-
-.pricing-price strong {
-    display: inline-block;
-
-    margin-left: 5px;
-
-    color: var(--black);
-
-    font-family: var(--serif);
-
-    font-size: 2.3rem;
-    font-weight: 500;
-}
-
-.pricing-summary {
-    margin-top: 20px;
-
-    color: #514d46;
-
-    line-height: 1.7;
-}
-
-.pricing-card ul {
-    margin-top: 28px;
-
-    list-style: none;
-}
-
-.pricing-card li {
-    padding: 11px 0;
-
-    color: #514d46;
-
-    border-bottom: 1px solid rgba(23, 22, 20, 0.10);
-}
-
-.pricing-card li::before {
-    content: "—";
-
-    margin-right: 12px;
-
-    color: var(--copper);
-}
-
-.pricing-link {
-    display: inline-block;
-
-    width: fit-content;
-
-    margin-top: auto;
-    padding-top: 28px;
-
-    text-decoration: underline;
-
-    text-underline-offset: 5px;
-}
-
-
-/* ----------------------------------------------------------
-   SEO / STRATEGY PRICING
----------------------------------------------------------- */
-
-.pricing-services {
-    margin-top: 50px;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    border-top: 1px solid var(--line);
-    border-left: 1px solid var(--line);
-}
-
-.pricing-services article {
-    padding: 42px;
-
-    background: var(--cream-light);
-
-    border-right: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-}
-
-.pricing-services h3 {
-    margin-bottom: 12px;
-
-    font-family: var(--serif);
-
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.pricing-small-price {
-    margin-bottom: 18px;
-
-    color: var(--copper);
-
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.pricing-services article > p:last-child {
-    max-width: 540px;
-
-    color: #514d46;
-
-    line-height: 1.7;
-}
-
-
-/* ----------------------------------------------------------
-   PRICING NOTE
----------------------------------------------------------- */
-
-.pricing-note {
-    margin-top: 40px;
-
-    padding-top: 30px;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 50px;
-
-    border-top: 1px solid var(--line);
-}
-
-.pricing-note p {
-    max-width: 620px;
-
-    color: var(--grey);
-
-    font-size: 0.92rem;
-
-    line-height: 1.7;
-}
-
-.pricing-note strong {
-    color: var(--black);
-}
-
-
-/* ----------------------------------------------------------
-   PRICING RESPONSIVE
----------------------------------------------------------- */
-
-@media (max-width: 950px) {
-
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .pricing-card {
-        min-height: auto;
-    }
-
-    .pricing-link {
-        margin-top: 30px;
-    }
-
-    .pricing-services {
-        grid-template-columns: 1fr;
-    }
-
-    .pricing-note {
-        grid-template-columns: 1fr;
-
-        gap: 20px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .pricing-section {
-        padding: 75px 7%;
-    }
-
-    .pricing-intro {
-        margin-bottom: 50px;
-    }
-
-    .pricing-intro h2 {
-        font-size: 3rem;
-    }
-
-    .pricing-card,
-    .pricing-services article {
-        padding: 32px 26px;
-    }
-
-    .pricing-card h3 {
-        font-size: 2rem;
-    }
-
-    .pricing-price strong {
-        font-size: 2rem;
+    .footer-tagline {
+        font-size: 0.68rem;
     }
 
 }
