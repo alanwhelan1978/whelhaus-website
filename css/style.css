@@ -2295,3 +2295,431 @@ p:not(.section-label) {
     }
 
 }
+
+/* ==========================================================
+   JACK DUNNE CASE STUDY
+========================================================== */
+
+
+/* ----------------------------------------------------------
+   CASE HERO
+---------------------------------------------------------- */
+
+.case-hero {
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    min-height: 720px;
+
+    background: var(--cream);
+}
+
+.case-hero-copy {
+
+    padding: 95px 8%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.case-hero-copy h1 {
+
+    font-size: clamp(4.5rem, 8vw, 8rem);
+
+    line-height: 0.86;
+
+    letter-spacing: -0.055em;
+}
+
+.case-meta {
+
+    margin-top: 30px;
+
+    color: #5b554e;
+}
+
+.case-intro {
+
+    max-width: 560px;
+
+    margin-top: 30px;
+
+    color: #514d46;
+
+    font-size: 1.05rem;
+
+    line-height: 1.75;
+}
+
+.case-hero-visual {
+
+    padding: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(16, 16, 14, 0.90),
+            rgba(16, 16, 14, 0.95)
+        ),
+        url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.case-study-mockup {
+
+    width: min(700px, 100%);
+}
+
+
+/* ----------------------------------------------------------
+   CASE OVERVIEW
+---------------------------------------------------------- */
+
+.case-overview {
+
+    padding: 100px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    background: var(--cream-light);
+
+    border-bottom: 1px solid var(--line);
+}
+
+.case-overview h2 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(3rem, 4.5vw, 5rem);
+
+    font-weight: 500;
+
+    line-height: 1.06;
+}
+
+.case-overview-copy {
+
+    max-width: 560px;
+
+    justify-self: end;
+}
+
+.case-overview-copy p {
+
+    margin-bottom: 22px;
+
+    color: #514d46;
+
+    line-height: 1.8;
+}
+
+
+/* ----------------------------------------------------------
+   CHALLENGE / RESPONSE
+---------------------------------------------------------- */
+
+.case-columns {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #eee8de;
+}
+
+.case-columns article {
+
+    padding: 85px 7%;
+
+    border-right: 1px solid var(--line);
+}
+
+.case-columns article:last-child {
+
+    border-right: none;
+}
+
+.case-columns h3 {
+
+    max-width: 550px;
+
+    margin-bottom: 24px;
+
+    font-family: var(--serif);
+
+    font-size: clamp(2.4rem, 3.5vw, 3.8rem);
+
+    font-weight: 500;
+
+    line-height: 1.08;
+}
+
+.case-columns p:not(.section-label) {
+
+    max-width: 520px;
+
+    margin-bottom: 18px;
+
+    color: #514d46;
+
+    line-height: 1.75;
+}
+
+
+/* ----------------------------------------------------------
+   SERVICES DELIVERED
+---------------------------------------------------------- */
+
+.case-services {
+
+    padding: 95px 7%;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 80px;
+
+    background: var(--dark-section);
+
+    color: #ffffff;
+}
+
+.case-services h2 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    font-weight: 500;
+
+    line-height: 1.05;
+}
+
+.case-services-list {
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.18);
+}
+
+.case-services-list div {
+
+    padding: 20px 0;
+
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    align-items: center;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.18);
+}
+
+.case-services-list span {
+
+    color: #c7764f;
+
+    font-size: 0.75rem;
+}
+
+.case-services-list p {
+
+    color: #e7e2da;
+}
+
+
+/* ----------------------------------------------------------
+   OUTCOME
+---------------------------------------------------------- */
+
+.case-outcome {
+
+    padding: 120px 8%;
+
+    text-align: center;
+
+    background: var(--cream-light);
+}
+
+.case-outcome h2 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(3.2rem, 5vw, 5.2rem);
+
+    font-weight: 500;
+
+    line-height: 1.05;
+}
+
+.case-outcome > p:not(.section-label) {
+
+    max-width: 680px;
+
+    margin: 26px auto 0;
+
+    color: var(--grey);
+
+    line-height: 1.8;
+}
+
+
+/* ----------------------------------------------------------
+   NEXT CTA
+---------------------------------------------------------- */
+
+.case-next {
+
+    padding: 100px 8%;
+
+    background: var(--dark-section);
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.case-next h2 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(4rem, 7vw, 7rem);
+
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+.case-next > p:not(.section-label) {
+
+    max-width: 620px;
+
+    margin: 24px auto 0;
+
+    color: #d0ccc5;
+}
+
+.case-next .primary-button {
+
+    margin-top: 34px;
+}
+
+
+/* ----------------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------------- */
+
+@media (max-width: 950px) {
+
+    .case-hero {
+
+        grid-template-columns: 1fr;
+    }
+
+    .case-hero-copy {
+
+        min-height: 560px;
+    }
+
+    .case-hero-visual {
+
+        min-height: 520px;
+    }
+
+    .case-overview {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .case-overview-copy {
+
+        justify-self: start;
+    }
+
+    .case-columns {
+
+        grid-template-columns: 1fr;
+    }
+
+    .case-columns article {
+
+        border-right: none;
+
+        border-bottom: 1px solid var(--line);
+    }
+
+    .case-services {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .case-hero-copy {
+
+        padding: 70px 7%;
+    }
+
+    .case-hero-copy h1 {
+
+        font-size: 4.2rem;
+    }
+
+    .case-hero-visual {
+
+        min-height: 460px;
+
+        padding: 40px 20px;
+    }
+
+    .case-overview {
+
+        padding: 70px 7%;
+    }
+
+    .case-columns article {
+
+        padding: 65px 7%;
+    }
+
+    .case-services {
+
+        padding: 70px 7%;
+    }
+
+    .case-outcome {
+
+        padding: 85px 7%;
+    }
+
+    .case-next {
+
+        padding: 80px 7%;
+    }
+
+}
