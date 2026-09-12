@@ -317,10 +317,16 @@ button {
     min-height: 260px;
 
     border-right: 1px solid var(--line);
+
+    transition: background 0.25s ease;
 }
 
 .service-card:last-child {
     border-right: none;
+}
+
+.service-card:hover {
+    background: #f3eee5;
 }
 
 .service-number {
@@ -381,8 +387,13 @@ button {
     background: #f8f4ed;
 }
 
+
+/* ----------------------------------
+   WORK IMAGE PANEL
+---------------------------------- */
+
 .work-image {
-    padding: 65px;
+    padding: 80px;
 
     display: flex;
     align-items: center;
@@ -390,10 +401,10 @@ button {
 
     background:
         linear-gradient(
-            rgba(28, 27, 24, 0.7),
-            rgba(28, 27, 24, 0.82)
+            rgba(18, 18, 16, 0.92),
+            rgba(18, 18, 16, 0.96)
         ),
-        url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=90");
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=90");
 
     background-size: cover;
     background-position: center;
@@ -405,7 +416,7 @@ button {
 ---------------------------------- */
 
 .website-mockup {
-    width: min(680px, 100%);
+    width: min(620px, 100%);
 
     background: #f4efe7;
 
@@ -540,7 +551,7 @@ button {
 .work-content h2 {
     margin-bottom: 12px;
 
-    font-size: clamp(2.8rem, 4vw, 4.8rem);
+    font-size: clamp(2.6rem, 3.6vw, 4.1rem);
 
     line-height: 1;
 
@@ -571,18 +582,15 @@ button {
 }
 
 .next-project {
-    margin-top: 58px;
+    margin-top: 68px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid var(--line);
 }
 
 .project-line {
-    display: block;
-
-    width: 75px;
-    height: 1px;
-
-    margin-bottom: 24px;
-
-    background: #8c867e;
+    display: none;
 }
 
 .next-project h3 {
@@ -590,9 +598,13 @@ button {
 
     font-family: var(--serif);
 
-    font-size: 2rem;
+    font-size: 1.9rem;
 
     font-weight: 500;
+}
+
+.next-project p:last-child {
+    color: var(--grey);
 }
 
 
@@ -601,21 +613,21 @@ button {
 ---------------------------------- */
 
 .approach {
-    padding: 80px 6%;
+    padding: 82px 6%;
 
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
 
     align-items: end;
 
-    min-height: 400px;
+    min-height: 390px;
 
     color: #fff;
 
     background:
         linear-gradient(
-            rgba(20, 20, 18, 0.82),
-            rgba(20, 20, 18, 0.9)
+            rgba(20, 20, 18, 0.9),
+            rgba(20, 20, 18, 0.94)
         ),
         url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85");
 
@@ -722,21 +734,6 @@ button {
 
 .footer-legal {
     font-size: 0.72rem;
-}
-
-
-/* ----------------------------------
-   HOVER DETAILS
----------------------------------- */
-
-.service-card,
-.work-content,
-.contact {
-    transition: background 0.25s ease;
-}
-
-.service-card:hover {
-    background: #f3eee5;
 }
 
 
@@ -904,9 +901,13 @@ button {
     }
 
     .work-image {
-        padding: 35px 20px;
+        padding: 42px 20px;
 
         min-height: 460px;
+    }
+
+    .website-mockup {
+        width: min(540px, 100%);
     }
 
     .mockup-content {
@@ -923,6 +924,10 @@ button {
 
     .work-content {
         padding: 58px 7%;
+    }
+
+    .next-project {
+        margin-top: 55px;
     }
 
     .next-project h3 {
