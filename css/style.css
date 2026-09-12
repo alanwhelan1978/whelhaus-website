@@ -2728,3 +2728,55 @@ p:not(.section-label):not(.work-meta) {
     }
 
 }
+
+/* ==========================================================
+   MOBILE HEADER REFINEMENT
+========================================================== */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        width: 100%;
+        min-height: 78px;
+
+        padding: 10px 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        overflow: visible;
+    }
+
+    .brand,
+    .brand-logo {
+        flex: 0 1 auto;
+        min-width: 0;
+    }
+
+    .header-logo {
+        width: 125px;
+        max-width: 125px;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+
+        flex: 0 0 auto;
+
+        margin-left: 20px;
+        padding: 10px 0;
+
+        background: transparent;
+        border: 0;
+
+        color: var(--black);
+
+        font-size: 0.95rem;
+        line-height: 1;
+
+        cursor: pointer;
+    }
+
+}
