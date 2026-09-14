@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alanwhelan1978.github.io/whelhaus-website/sitemap.xml
+Sitemap: https://whelhaus.ie/sitemap.xml
