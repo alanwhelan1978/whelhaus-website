@@ -96,7 +96,7 @@
 
     <link
         rel="stylesheet"
-        href="css/style.css?v=20260912"
+        href="css/style.css?v=20260914"
     >
 
 </head>
@@ -310,10 +310,35 @@
 
 
             <form
+                id="project-form"
                 class="project-form"
-                action="https://formspree.io/f/YOUR-FORM-ID"
+                action="https://formspree.io/f/mkjnleqe"
                 method="POST"
+                aria-describedby="form-privacy form-status"
             >
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New WHELHAUS project enquiry"
+                >
+
+                <div
+                    class="form-honeypot"
+                    aria-hidden="true"
+                >
+                    <label for="company-website">
+                        Leave this field blank
+                    </label>
+
+                    <input
+                        type="text"
+                        id="company-website"
+                        name="_gotcha"
+                        tabindex="-1"
+                        autocomplete="off"
+                    >
+                </div>
 
 
                 <div class="form-group">
@@ -326,6 +351,8 @@
                         type="text"
                         id="name"
                         name="name"
+                        autocomplete="name"
+                        maxlength="120"
                         required
                     >
 
@@ -342,6 +369,8 @@
                         type="email"
                         id="email"
                         name="email"
+                        autocomplete="email"
+                        maxlength="254"
                         required
                     >
 
@@ -358,6 +387,8 @@
                         type="text"
                         id="business"
                         name="business"
+                        autocomplete="organization"
+                        maxlength="160"
                     >
 
                 </div>
@@ -373,6 +404,8 @@
                         type="url"
                         id="website"
                         name="website"
+                        autocomplete="url"
+                        maxlength="2048"
                         placeholder="https://"
                     >
 
@@ -394,19 +427,27 @@
                             Select a service
                         </option>
 
-                        <option value="web-design">
+                        <option value="Web Design">
                             Web Design
                         </option>
 
-                        <option value="seo">
+                        <option value="Website Redesign">
+                            Website Redesign
+                        </option>
+
+                        <option value="SEO">
                             SEO
                         </option>
 
-                        <option value="digital-strategy">
+                        <option value="Hosting &amp; Maintenance">
+                            Hosting &amp; Maintenance
+                        </option>
+
+                        <option value="Digital Strategy">
                             Digital Strategy
                         </option>
 
-                        <option value="not-sure">
+                        <option value="Not sure yet">
                             Not sure yet
                         </option>
 
@@ -425,6 +466,7 @@
                         id="message"
                         name="message"
                         rows="7"
+                        maxlength="4000"
                         required
                     ></textarea>
 
@@ -441,6 +483,26 @@
                     </button>
 
                 </div>
+
+
+                <p
+                    id="form-privacy"
+                    class="form-privacy form-group-full"
+                >
+                    By submitting this form, you acknowledge that WHELHAUS
+                    and Formspree will process your details to respond to
+                    your enquiry. Please do not include sensitive information.
+                    Read the <a href="privacy.html">Privacy Policy</a>.
+                </p>
+
+
+                <p
+                    id="form-status"
+                    class="form-status form-group-full"
+                    role="status"
+                    aria-live="polite"
+                    tabindex="-1"
+                ></p>
 
 
             </form>
@@ -546,7 +608,7 @@
 </footer>
 
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260914"></script>
 
 </body>
 

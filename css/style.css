@@ -2137,6 +2137,60 @@ p:not(.section-label):not(.work-meta) {
     cursor: pointer;
 }
 
+.form-button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.form-honeypot {
+    position: absolute;
+    left: -10000px;
+
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+}
+
+.form-privacy {
+    margin-top: -10px;
+
+    color: #bdb8b0;
+
+    font-size: 0.82rem;
+    line-height: 1.65;
+}
+
+.form-privacy a {
+    color: #ffffff;
+
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.form-status {
+    min-height: 1.6em;
+    margin: -8px 0 0;
+
+    color: #d5d0c8;
+
+    line-height: 1.6;
+
+    outline: none;
+}
+
+.form-status.is-success {
+    color: #e8e3da;
+}
+
+.form-status.is-error {
+    color: #f2b8b0;
+}
+
+.form-status.is-sending {
+    color: #d5d0c8;
+}
+
 .contact-note {
     padding: 100px 7%;
 
